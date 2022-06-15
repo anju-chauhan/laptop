@@ -16,6 +16,8 @@ export class AppComponent {
   name = '';
   branch = '';
   course = '';
+  color = 'red';
+  ddd = true;
 
   student =[ 
      {name:'anju',rollno:21,branch:'it',course:'btech'}, 
@@ -65,11 +67,25 @@ clickDun(){
   delete this.student[2];
 }
 
-     
+myEvent(colorData: string){
+  // if(color==='red'){
+  //   this.color = color;
+  // }
+  // else if(color==='green'){
+  //   this.color = color;
+  // }
+  // else if(color==='blue'){
+  //   this.color = color;
+  // }
+  // else if(color==='yellow'){
+  //   this.color = color;
+  // }
+  this.color =colorData
+}
 
-
-
-
+changeBtn(){
+  this.ddd= false
+}
 
 
 

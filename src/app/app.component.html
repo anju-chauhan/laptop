@@ -16,7 +16,8 @@
 <button (click) = "clickRun()">remove first</button>
 <button (click) = "clickDun()">delete any</button>
 
-<table style="border:2px solid black;text-align: center; width: 400px;">
+<table style="border:2px solid black;text-align: center; width: 400px;" 
+ [ngStyle]="{'background-color': color}">
     <tr>
 
         <th>name</th>
@@ -55,6 +56,11 @@
     
     
 </div>
+
+<button (click)="myEvent('red')">btn1</button>
+<button (click)="myEvent('green')">btn2</button>
+<button (click)="myEvent('blue')">btn3</button>
+<button (click)="myEvent('yellow')">btn4</button><br><br><br>
+
+<button (click)="changeBtn()" [ngClass]="{'btn_one': ddd}"> kkk</button>
     
-
-
