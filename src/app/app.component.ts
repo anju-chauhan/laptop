@@ -11,7 +11,6 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'array';
-  // inputData: any = {name: ""}
 
   name = '';
   branch = '';
